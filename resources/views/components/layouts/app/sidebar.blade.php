@@ -56,7 +56,7 @@
                     </flux:navlist.item>
 
              <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Reparacion de materias
+                        Aplicar reparacion de notas
                     </flux:navlist.item>
                
             </flux:navlist.group>
