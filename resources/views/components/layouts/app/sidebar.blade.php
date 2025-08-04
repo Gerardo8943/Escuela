@@ -48,7 +48,7 @@
                     </flux:navlist.item>
 
                        <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Ranking de notas de la escuela
+                        Ranking de los mejores estudiantes
                     </flux:navlist.item>
 
                        <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
@@ -56,7 +56,7 @@
                     </flux:navlist.item>
 
              <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Reparacion de materia
+                        Reparacion de materias
                     </flux:navlist.item>
                
             </flux:navlist.group>
