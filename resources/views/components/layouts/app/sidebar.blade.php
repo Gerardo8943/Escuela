@@ -48,7 +48,7 @@
                     </flux:navlist.item>
 
                        <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Ranking de notas de la escuela
+                        Ranking de notas de la escuelas
                     </flux:navlist.item>
 
                        <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
