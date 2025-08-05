@@ -8,6 +8,9 @@ class MenuDesplegable extends Component
 {
 
     public $open = false;
+    public $heading;
+     public $icon = 'folder';
+    public $items=[];
     public function toggle()
     {
         $this->open = !$this->open;

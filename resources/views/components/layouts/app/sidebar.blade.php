@@ -20,51 +20,68 @@
                     wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
             </flux:navlist.group>
 
-                <!-- Inscripcion -->
-                   <flux:navlist.group :heading="__('Inscripcion')" class="grid">
-                    <flux:navlist.item icon="identification" wire:navigate>
-                        Nuevo trayecto
-                    </flux:navlist.item>
-                     <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Inscripcion para reparacion
-                    </flux:navlist.item>
-            </flux:navlist.group>
+            <!-- Inscripcion -->
  
-            <!-- Unidades curriculares -->
-            <flux:navlist.group :heading="__('Unidades curriculares')" class="grid">
-            @livewire('menu-desplegable')
-            </flux:navlist.group>
+    @livewire('menu-desplegable', [
+        'heading' => 'Inscripcion',
+        'icon' => 'pencil-square',
+        'items' => [
+            ['label' => 'Nuevo trayecto', 'icon' => 'pencil-square'],
+            ['label' => 'Inscripcion para reparacion', 'icon' => 'language'],
+        ],
+    ])
 
+ <!--Unidades Curriculares -->
+
+    @livewire('menu-desplegable', [
+        'heading' => 'Unidades Curriculares',
+        'icon' => 'academic-cap',
+        'items' => [
+            ['label' => 'Castellano', 'icon' => 'pencil-square'],
+            ['label' => 'Ingles', 'icon' => 'language'],
+            ['label' => 'Matematicas', 'icon' => 'calculator'],
+            ['label' => 'Fisica', 'icon' => 'cube'],
+            ['label' => 'Geografia', 'icon' => 'map'],
+            ['label' => 'Informatica', 'icon' => 'computer-desktop'],
+            ['label' => 'Biologia', 'icon' => 'globe-americas'],
+            ['label' => 'Historia', 'icon' => 'globe-alt'],
+            ['label' => 'Quimica', 'icon' => 'beaker'],
+            ['label' => 'Educacion Fisica', 'icon' => 'hand-raised'],
+        ],
+    ])
+
+                <!-- Notas -->
+
+    @livewire('menu-desplegable', [
+        'heading' => 'Notas',
+        'icon' => 'clipboard-document-list',
+        'items' => [
+            ['label' => 'Calificacion final', 'icon' => 'magnifying-glass-circle'],
+            ['label' => 'Primer corte de notas', 'icon' => 'magnifying-glass-circle'],
+            ['label' => 'Mejores notas del salon', 'icon' => 'magnifying-glass-circle'],
+            ['label' => 'Ranking de los mejores estudiantes', 'icon' => 'magnifying-glass-circle'],
+
+        
             
-              <!-- Notas -->
-            <flux:navlist.group :heading="__('Notas')" class="grid">
+        ],
+    ])
 
-                 <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Calificacion final de notas
-                    </flux:navlist.item>
+    @livewire('menu-desplegable', [
+        'heading' => 'Actividades recreativas',
+        'icon' => 'flag',
+        'items' => [
+            ['label' => 'Futbol',  'icon' => 'globe-alt'],
+            ['label' => 'Baloncesto',  'icon' => 'globe-alt'],
+            ['label' => 'Voleibol',  'icon' => 'globe-alt'],
+            ['label' => 'Ajedrez',  'icon' => 'globe-alt'],
+            ['label' => 'Arte y dibujos',  'icon' => 'globe-alt']
+        ]
+    ])
 
-                       <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Ranking de notas del salon
-                    </flux:navlist.item>
-
-                       <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Ranking de los mejores estudiantes
-                    </flux:navlist.item>
-
-                       <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Primer corte de notas
-                    </flux:navlist.item>
-
-             <flux:navlist.item icon="magnifying-glass-circle" wire:navigate>
-                        Aplicar reparacion de notas
-                    </flux:navlist.item>
-               
-            </flux:navlist.group>
+ 
 
               <!-- Cursos -->
-               <flux:navlist.group :heading="__('Actividades extracurriculares')" class="grid">
-               
-            </flux:navlist.group>
+         
         </flux:navlist>
 
         <flux:spacer />
